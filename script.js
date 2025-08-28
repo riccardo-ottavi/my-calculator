@@ -14,7 +14,10 @@ buttons.forEach(btn => {
         }
     } else if (value === "C") {
         displayContent = ""; 
-    } else {
+    } else if (value === "x") {
+        displayContent += "*";
+    }
+    else {
         displayContent += value;
     }
 
