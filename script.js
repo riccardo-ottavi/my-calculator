@@ -1,6 +1,6 @@
 const buttons = document.querySelectorAll("#keyboard button");
 const display = document.getElementById("display");
-let displayContent = [];
+let displayContent = "";
 
 buttons.forEach(btn => {
   btn.addEventListener("click", () => {
@@ -8,16 +8,16 @@ buttons.forEach(btn => {
 
     if (value === "=") {
         try {
-            displayContent = [eval(displayContent.join(""))]; 
+            displayContent = eval(displayContent).toString(); 
         } catch(e) {
-            displayContent = ["Errore"];
+            displayContent = "Errore";
         }
     } else if (value === "C") {
-        displayContent = [];
+        displayContent = ""; 
     } else {
-        displayContent.push(value);
+        displayContent += value;
     }
 
-    display.textContent = displayContent.join("");
+    display.textContent = displayContent;
   });
 });
