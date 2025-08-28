@@ -20,7 +20,11 @@ body {
     height: 650px;
     width: 30%;
     margin: 0 auto;
-    background-color: cadetblue;
-    
+    background-color: cadetblue;   
+}
+
+#keyboard button {
+    width: 60px;
+    height: 50px;
 }
 
