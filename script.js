@@ -16,6 +16,8 @@ buttons.forEach(btn => {
         displayContent = ""; 
     } else if (value === "x") {
         displayContent += "*";
+    }else if (value === "AC") {
+        displayContent = displayContent.slice(0, -1);
     }
     else {
         displayContent += value;
