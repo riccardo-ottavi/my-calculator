@@ -4,7 +4,20 @@ let displayContent = [];
 
 buttons.forEach(btn => {
   btn.addEventListener("click", () => {
-    displayContent.push(btn.textContent); // s
-    display.textContent = displayContent.join("") // scrive il numero cliccato
+    let value = btn.textContent;
+
+    if (value === "=") {
+        try {
+            displayContent = [eval(displayContent.join(""))]; 
+        } catch(e) {
+            displayContent = ["Errore"];
+        }
+    } else if (value === "C") {
+        displayContent = [];
+    } else {
+        displayContent.push(value);
+    }
+
+    display.textContent = displayContent.join("");
   });
 });
