@@ -5,7 +5,7 @@
 }
 
 body {
-    background-color: yellowgreen;
+    background-color: rgba(107, 211, 168, 0.952);
 }
 
 #screen {
@@ -14,6 +14,7 @@ body {
     margin: 0 auto;
     background-color: aqua;
     margin-top: 40px;
+    padding-top: 25px;
 }
 
 #keyboard {
@@ -26,5 +27,10 @@ body {
 #keyboard button {
     width: 60px;
     height: 50px;
+}
+
+#screen {
+    font-size: 60px;
+    font-weight: 600;
 }
 
