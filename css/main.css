@@ -4,8 +4,21 @@
     box-sizing: border-box;
 }
 
-div {
-    height: 500px;
-    width: 500px;
-    background-color: blue 
+body {
+    background-color: yellowgreen;
+}
+
+#screen {
+    height: 150px;
+    width: 30%;
+    margin: 0 auto;
+    background-color: aqua;
+    margin-top: 40px;
+}
+
+#keyboard {
+    height: 650px;
+    width: 30%;
+    margin: 0 auto;
+    background-color: cadetblue;
 }
